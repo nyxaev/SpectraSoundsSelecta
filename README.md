@@ -2,7 +2,7 @@
 
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:ff00cc,50:6a00ff,100:00e5ff&height=220&section=header&text=Cat%C3%A1logo%20&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Python%20%C2%B7%20MongoDB%20%C2%B7%20Terminal&descAlignY=58&descSize=18)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=620&lines=Cat%C3%A1logo+de+m%C3%BAsicas+no+terminal;Python+%2B+MongoDB;CRUD+completo+com+anima%C3%A7%C3%B5es;Projeto+de+estudo+de+banco+de+dados)](https://github.com/nyxaev)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=620&lines=Cat%C3%A1logo+de+m%C3%BAsicas+no+terminal;Python+%2B+MongoDB;Projeto+de+estudo+de+banco+de+dados)](https://github.com/nyxaev)
 
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
