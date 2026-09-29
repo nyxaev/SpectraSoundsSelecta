@@ -23,7 +23,7 @@ from pymongo import MongoClient
 cliente = MongoClient("mongodb://localhost:27017/", serverSelectionTimeoutMS=3000)
 
 # "banco"
-banco = cliente["catalogo_techno"]
+banco = cliente["catalogo"]
 
 # "musicas"
 musicas = banco["musicas"]
@@ -64,7 +64,7 @@ def adicionar():
         "artista": input("Artista: ").strip(),
         "bpm": ler_numero("BPM: "),
         "ano": ler_numero("Ano: "),
-        "subgenero": input("Subgênero (minimal, acid, industrial...): ").strip(),
+        "subgenero": input("Subgênero: ").strip(),
     }
     musicas.insert_one(musica)  # salva no Mongo
     print("  Música adicionada!")
@@ -139,7 +139,7 @@ def menu():
     }
 
     while True:
-        print("\n=== CATÁLOGO TECHNO ===")
+        print("\n=== CATÁLOGO===")
         print("1 - Adicionar música")
         print("2 - Listar músicas")
         print("3 - Buscar por artista")
