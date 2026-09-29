@@ -20,7 +20,7 @@ from pymongo import MongoClient
 #⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠲⢤⣀⣀⠀⢀⣀⣀⠤⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
 
-cliente = MongoClient("mongodb://localhost:roda no numero que vier/", serverSelectionTimeoutMS=3000)
+cliente = MongoClient("mongodb://localhost:roda no padrao (27017) mas pode usar outro/", serverSelectionTimeoutMS=3000)
 
 # "banco"
 banco = cliente["catalogo"]
