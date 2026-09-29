@@ -112,14 +112,14 @@ def remover():
         return
     confirmar = input(f"Apagar '{musica['titulo']}'? (s/n): ").strip().lower()
     if confirmar == "s":
-        musicas.delete_one({"_id": musica["_id"]})  # _id é o identificador único
+        musicas.delete_one({"_id": musica["_id"]})  
         print("  Música removida!")
     else:
         print("  Cancelado.")
 
 
 
-# MENU (chique nos urtimo)
+
 2
 
 def menu():
