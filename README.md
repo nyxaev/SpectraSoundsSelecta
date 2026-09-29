@@ -39,53 +39,15 @@ Um catálogo de músicas que roda no terminal. Cada música vira um documento no
 - [MongoDB Community Server](https://www.mongodb.com/try/download/community) rodando em `localhost:27017`
 - (Opcional) [MongoDB Compass](https://www.mongodb.com/products/tools/compass) para visualizar os dados
 
-## 🚀 Como rodar
-
-**1. Clone o repositório**
-```bash
-git clone https://github.com/nyxaev/NOME-DO-REPOSITORIO.git
-cd NOME-DO-REPOSITORIO
-```
-
-**2. Instale a dependência**
-```bash
-pip install pymongo
-```
-
-**3. Ligue o MongoDB** (por padrão em `mongodb://localhost:27017`)
-
-**4. Execute**
-```bash
-python catalogo_techno_v2.py
-```
-
-> 💡 No PyCharm, marque **Emulate terminal in output console** em `Run > Edit Configurations` para a tela limpar e as animações funcionarem direito.
-
-O banco `catalogo_techno` e a collection `musicas` são criados sozinhos na primeira música adicionada.
-
-## 🗂️ Estrutura dos dados
-
-```json
-{
-  "_id": "ObjectId(...)",
-  "titulo": "Spastik",
-  "artista": "Plastikman",
-  "bpm": 130,
-  "ano": 1993,
-  "subgenero": "minimal"
-}
-```
-
-O campo `_id` é gerado pelo próprio MongoDB.
 
 ## 🔎 Conferindo os dados
 
-**Pelo Compass:** conecte em `localhost:27017`, abra o banco `catalogo_techno` e a collection `musicas`.
+**Pelo Compass:** conecte em `localhost:27017`, abra o banco `catalogo` e a collection `musicas`.
 
 **Pelo terminal:**
 ```bash
 mongosh
-use catalogo_techno
+use catalogo
 db.musicas.find()
 ```
 
