@@ -20,7 +20,7 @@ from pymongo import MongoClient
 #⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠲⢤⣀⣀⠀⢀⣀⣀⠤⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
 
-cliente = MongoClient("mongodb://localhost:27017/", serverSelectionTimeoutMS=3000)
+cliente = MongoClient("mongodb://localhost:seunumerodelocalhost/", serverSelectionTimeoutMS=3000)
 
 # "banco"
 banco = cliente["catalogo"]
@@ -66,7 +66,7 @@ def adicionar():
         "ano": ler_numero("Ano: "),
         "subgenero": input("Subgênero: ").strip(),
     }
-    musicas.insert_one(musica)  # salva no Mongo
+    musicas.insert_one(musica) 
     print("  Música adicionada!")
 def listar():
     print("\n--- Todas as músicas ---")
@@ -75,7 +75,7 @@ def listar():
 def buscar():
     print("\n--- Buscar por artista ---")
     nome = input("Nome do artista: ").strip()
-    # regex + "i" = procura parte do texto, sem diferenciar maiúscula/minúscula
+    
     filtro = {"artista": {"$regex": re.escape(nome), "$options": "i"}}
     mostrar(list(musicas.find(filtro)))
 
@@ -123,7 +123,7 @@ def remover():
 2
 
 def menu():
-    # Testa a conexão antes de começar
+
     try:
         cliente.admin.command("ping")
     except Exception:
